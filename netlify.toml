@@ -1,0 +1,4 @@
+[[redirect]]
+    from ="/"
+    to = "/Samples/Game%20of%20Pong/Index.html"
+    status = "302"
