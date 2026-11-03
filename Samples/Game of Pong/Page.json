@@ -1,0 +1,10 @@
+{
+    "NameOfMap":"Ground",
+    "XtoYratio": [1,1],
+    "plotColor":{
+        "1": "grey"
+    },
+    "plot":[1],
+    "stageDimentions" : ["100vw" ,"100vh"],
+    "Style":""
+}

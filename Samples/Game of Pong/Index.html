@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="StageScreen">
+    </div>
+    <div id="UI">
+        <div id="OptionsScreen" class="screens">
+            <h1>Options</h1>
+            <div id="OptionsSelctionScreen">
+                <div class="BOX">
+                    <h3>Opponet Type</h3>
+                    <hr>
+
+                    <input id="BotOpponetTypeRadioBtn" checked name="OpponetType" value="0" type="radio"><label
+                        for="BotOpponetTypeRadioBtn">Bot</label><br>
+                    <input id="PlayerOpponetTypeRadioBtn" name="OpponetType" value="1" type="radio"><label
+                        for="PlayerOpponetTypeRadioBtn">Player</label><br>
+
+                </div>
+                <div class="BOX">
+                    <h3>Player</h3>
+                    <hr>
+
+                    <h5>Controls</h5>
+                    <label>Up:</label> <span class="KeyInputs ControlInput" value="up" data-playerid="0"
+                        id="PlayerUpControlInput">w</span>
+                    <label>Down:</label><span class="KeyInputs ControlInput" value="down" data-playerid="0"
+                        id="PlayerDownControlInput">s</span>
+
+                </div>
+                <div class="BOX">
+                    <h3>Game</h3>
+                    <hr><br>
+                    <h5>Short Cuts</h5>
+                    <label>Start/Restart:</label><span class="KeyInputs ShortCutInput" value="restart">r</span><br><br>
+                    <h5>Difficulty</h5>
+                    <select id="DiffOptionSelction">
+                        <option selected class="DiffOptions" value="0">Eazy </option>
+                        <option class="DiffOptions" value="1">Medium</option>
+                        <option class="DiffOptions" value="2">Hard </option>
+                    </select><br><br>
+
+                    <h5>Goal <input id="goalSetModeInput" checked type="checkbox"></h5>
+                    <div id="goalSet">
+                        <label>Set:</label><input type="number" id="goalSetInput" value="10" min="1">
+                    </div>
+
+
+
+                </div>
+                <div id="OpponentSection" class="BOX">
+                    <h3>Opponet</h3>
+                    <hr>
+                    <h5>Controls</h5>
+                    <label>Up:</label> <span class="KeyInputs ControlInput" value="up" data-playerid="1"
+                        id="OpponentUpControlInput">w</span>
+                    <label>Down:</label><span class="KeyInputs ControlInput" value="down" data-playerid="1"
+                        id="OpponentDownControlInput">s</span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="ResultsScreen" >
+            <h1>Top Scores</h1>
+            <div id="ResultScreenDisplay"><p style="text-align: center;">No Top Scores Yet</p></div>
+        </div>
+    </div>
+
+    <script src="Editor.js" type="module"></script>
+</body>
+
+</html>
